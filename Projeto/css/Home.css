@@ -9,7 +9,6 @@
 body {
     font-family: sans-serif;
 }
-
 /* Header */
 
 header {
@@ -98,9 +97,6 @@ nav ul {
     justify-content: space-between;
 }
 
-
-
-
 .navLinks {
     display: flex;
     align-items: center;
@@ -109,68 +105,46 @@ nav ul {
     text-decoration: none;
     list-style: none;
 }
+/* Main */
 
+.imagem-carrossel {
+    object-fit: cover;
+    height: 500px;
+}
+/* Lançamentos */
 
-.imagemCarrossel {
-    max-height: 400px;
-    object-fit: contain;
-
+.lancamentos {
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 100px 0;
 }
 
-.fundoCarrossel {
-    background-color: rgba(red, green, blue, alpha);
+.posicionamento-lancamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%
 }
 
-.divisaoDunk {
+.produto-lancamento img {
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.produto-lancamento P {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.centralizar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.geralDunk {
-    max-width: 1440px;
-    width: 100%;
-    display: flex;
-    text-align: start;
-    justify-content: start;
-    align-items: flex-start;
-    margin-top: 100px;
-}
-
-.infoDunk h2 {
-    font-size: 36px;
-}
-
-.infoDunk p {
-    font-size: 20px;
-    text-align: justify;
-    max-width: 600px;
-    min-width: 600px;
-    font-weight: 300;
-}
-
-.carrossel {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: flex-end;
-    margin-left: 300px;
-
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-
-
-}
-
-.imagemCarrosselDunk {
-    width: 500px;
-    height: 500px;
-}
-
-.imagemCarrosselDunk img {
-    height: 500px;
-    width: 500px;
-
+.width1440 {
+    width: 1440px;
 }
 
 .rodape {
@@ -203,7 +177,6 @@ nav ul {
 .infoLojas h5 {
     justify-content: start;
     color: white;
-    font-size: 20px;
 }
 
 .infoLojas img {
@@ -212,10 +185,10 @@ nav ul {
 
 footer {
     display: flex;
-    margin-top: 70px;
     background-color: black;
     width: 100%;
     height: 350px;
+    padding-top: 50px;
 }
 
 .sobreGrmt img {
@@ -252,78 +225,10 @@ footer p {
     color: white;
 }
 
-
-.divisaoPageProduto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.geralProduto {
-    max-width: 1440px;
-    width: 100%;
-    display: flex;
-    text-align: start;
-    justify-content: start;
-    align-items: flex-start;
-    margin-top: 100px;
-
-}
-
-.imagemProduto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.imagemLojas {
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-
-#fotoProduto {
-    width: 482px;
-    height: 482px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-.imagemLojas img {
-    max-width: 112px;
-}
-
-
-.infoProduto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 300px;
-}
-
-.infoProduto img {
-    width: 140px;
-}
-
-.infoProduto h2 {
-    text-transform: uppercase;
-}
-
-.infoProduto p {
-    font-weight: lighter;
-    font-size: 20px;
-}
-
 .produtosExclusivos {
+    background-color: #DEDADA;
     width: 100%;
     height: 520px;
-    background-color: #DEDADA;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -338,11 +243,8 @@ footer p {
     width: 300px;
     height: 275px;
     border-radius: 10px;
-
     background-size: cover;
     background-repeat: no-repeat;
-
-
 }
 
 .allProducts a {
@@ -356,7 +258,6 @@ footer p {
     font-size: 18px;
     text-transform: uppercase;
     line-height: 275px;
-
 }
 
 .allProducts a:hover {
@@ -368,101 +269,24 @@ footer p {
     background-image: url("../imagens/airjordan.jpg");
 }
 
-.adidasYeezy{
-    background-image: url("../imagens/adidasyeezy.jpg");
+.adidasYeezy {
+    background-image: url("../imagens/adidas-yeezy.jpg");
 }
 
-.nikeDunk{
+.nikeDunk {
     background-image: url("../imagens/nikedunk.jpg");
 }
 
-main{
-    margin-bottom: 300px;
+main {
+    flex-direction: column;
 }
 
-/* Page Tenis */
-
-.title-page {
-    background-color: lightgrey;
+.title-shoes {
     display: flex;
     justify-content: center;
-    color: white;
-    font-weight: bold;
-    height: 100px;
-    font-size: 49px;
-    align-items: center;
+    background-color: #DEDADA;
 }
 
-
-/* Produtos */
-
-.grid-container {
-    display: grid;
-    grid-gap: 50px 100px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 150px;
-    width: 100%
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 200px;
-    height: 200px;
-    margin-left: 50px;
-    margin: 20px;
-}
-
-.price {
-    color: black;
-    font-size: 22px;
-}
-
-.card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
+.infoGrmt h6 h5 {
     font-size: 15px;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.card button:hover {
-    opacity: 0.7;
-}
-
-.nome-produto {
-    text-transform: capitalize;
-    font-size: 25px;
-    color: black;
-    text-align: left;
-}
-
-.card img {
-    width: 221px;
-    height: 221px;
-   
-}
-
-.centralizar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.width1440 {
-    width: 1440px;
-}
-
-main a{
-    text-decoration: none;
-}
-
-main a:hover{
-    color: #DEDADA;
-
 }

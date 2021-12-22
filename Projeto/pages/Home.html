@@ -2,105 +2,191 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <nav class="larguraPadrao">
-      <div id="navPrincipal">
-        <div id="navImg">
-          <img src="../imagens/Sem_titulo1521.png">
-        </div>
-        <div id="navSearch">
-          <input type="search" placeholder="O que você procura ?">
+    <header>
+        <nav class=" larguraPadrao ">
+            <div class="navPrincipal ">
+                <div class="navImg ">
+                    <a href="../pages/Home.html">
+                        <img src="../imagens/Sem_titulo1521.png ">
+                    </a>
+                </div>
+                <div class="navSearch ">
+                    <input type="search " placeholder="O que você procura ? ">
+                </div>
+                <div class="navButtons ">
 
-        </div>
-        <div id="navButtons">
+                    <button>
+                        <i class="fa fa-user " aria-hidden="true "></i>
+                        <p> Entrar </p>
+                    </button>
 
-          <button>
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <p> Entrar </p>
-          </button>
-          <button>
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-      <div id="navLinks">
-        <ul>
-          <li> <a href="#"> Home </a></li>
-          <li> <a href="#"> Tênis </a></li>
-          <li> <a href="#"> Roupas </a></li>
-          <li> <a href="#"> Acessórios </a></li>
-          <li> <a href="#"> Sales </a></li>
+                </div>
+            </div>
+            <div class="navLinks ">
+                <ul>
+                    <li>
+                        <a href="../pages/Home.html" "> Home </a></li>
+                    <li> <a href="Page-Shoes.html "> Tênis </a></li>
+                    <li> <a href="Page-Roupas.html "> Roupas </a></li>
+                    <li> <a href="Page-acessorios.html "> Acessórios </a></li>
+                
 
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner fundoCarrossel">
-        <div class="carousel-item active">
-          <img src="../imagens/Banner-inbound-spw-m9s2.png.webp" class="d-block w-100 imagemCarrossel" alt="...">
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleControls " class="carousel slide " data-bs-ride="carousel ">
+            <div class="carousel-inner ">
+            <div class="carousel-item active imagem-carrossel ">
+                <img src="../imagens/banner1.png " class="d-block w-100 " alt="... ">
+            </div>
+            <div class="carousel-item imagem-carrossel ">
+                <img src="../imagens/banner3.png " class="d-block w-100 " alt="... ">
+            </div>
+            <div class="carousel-item imagem-carrossel ">
+                <img src="../imagens/yeezy banner.png " class="d-block w-100 " alt="... ">
+            </div>
+            </div>
+         
+           
         </div>
-        <div class="carousel-item">
-          <img src="../imagens/banner-TENIS.png" class="d-block w-100 imagemCarrossel" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../imagens/db46b8ccac19512206181f528fbbaaa0.png" class="d-block w-100 imagemCarrossel" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+    <div class="lancamentos ">
+
+
+
+        <h3> Lançamentos</h3>
+        <main class="w-100 centralizar ">
+
+            <div class="width1440 ">
+
+                <div class="posicionamento-lancamento ">
+
+                    <div class="produto-lancamento ">
+
+                        <img src="../imagens/tenis/adidas-Yeezy-500-Taupe-Light-1-min.png ">
+                        <p>Yeezy Boost 500 Taupe Light</p>
+
+                    </div>
+
+
+                    <div class="produto-lancamento ">
+                        <img src="../imagens/tenis/dunkblack-min.png ">
+                        <p>DUNK LOW BLACK WHITE</p>
+
+                    </div>
+
+                    <div class="produto-lancamento ">
+                        <img src="../imagens/tenis/air force 1 shadow.png ">
+
+                        <p>AIR FORCE 1 SHADOW SUNSET PULSE </p>
+
+                    </div>
+
+
+                </div>
+            </div>
     </div>
 
-    <div class="produtosExclusivos">
-      <div class="airJordan allProducts">
-        <a href=""> Air Jordan </a>
-      </div>
-      <div class="adidasYeezy allProducts">
-        <a href=""> Adidas Yeezy </a>
 
-      </div>
-      <div class="nikeDunk allProducts">
-        <a href=""> Nike Dunk </a>
+    <div class="produtosExclusivos ">
 
-      </div>
+        <h2> Os tênis mais exclusivos do mundo</h2>
 
 
+        <div class="produtosExclusivos ">
 
 
+            <div class="airJordan allProducts ">
+                <a href="info-jordan.html "> Air Jordan </a>
+            </div>
+
+            <div class="adidasYeezy allProducts ">
+                <a href="info-yeezy.html "> Adidas Yeezy </a>
+
+            </div>
+
+            <div class="nikeDunk allProducts ">
+                <a href="dunk.html "> Nike Dunk </a>
+
+            </div>
+
+        </div>
     </div>
 
-  </main>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer class="rodape ">
+        <div class="rodapeUm ">
+            <div class="sobreGrmt ">
+
+                <img src="../imagens/Sem_titulo1521.png ">
+
+
+                <p>Especialistas em tênis. A nova redes de informações de calçados.
+                    <br>
+                    <br> Temos todas as informações sobre as melhores marcas de Streetwear do mundo que você precisa
+                </p>
+            </div>
+            <div class="infoLojas ">
+                <h5> Lojas Parceiras </h5>
+                <br>
+                <img src="../imagens/logo maze.png ">
+                <br>
+                <img src="../imagens/pineapple logo.png ">
+                <img src="../imagens/artwalk.png ">
+                <img src="../imagens/logoauthenticfeet.png ">
+
+
+
+            </div>
+            <div class="infoGrmt ">
+                <h5> Redes Sociais </h5>
+                <img src="../imagens/logotipo-instagram.png ">
+                <img src="../imagens/logotipo-twittercerto.png ">
+                <img src="../imagens/logotipo-whatsapp.png ">
+                <img src="../imagens/logotipo-facebookcerto.png ">
+                <br>
+                <br>
+                
+                <a href="ligação-com-as-lojas.html ">
+                    <h6> NOSSAS LIGAÇÕES COM AS LOJAS </h6>
+                </a>
+
+                <a href="pages-sac.html ">
+                <h6> POLITICA DE PRIVACIDADE </h6>
+                </a>
+
+                <a href="segurança.html ">
+                <h6> SEGURANÇA </h6>
+                </a>
+            </div>
+
+    </footer>
 
 
 
